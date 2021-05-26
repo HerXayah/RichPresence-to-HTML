@@ -7,7 +7,7 @@
 
     // For this to Work please join on https://discord.gg/UrXF2cfJ7F
 
-	var discord_id = "202740603790819328";
+	var discord_id = "ExampleID";
 
 	function stats() {
 
