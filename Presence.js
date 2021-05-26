@@ -1,6 +1,6 @@
 	// Example ID
 	// var discord_id = "YOUR_ID";
-	// Credits: Azariel#0004 & Roka#1337
+	// Made by: ♡Lisa~#0004
 	// also replace #spotify with Class ID
 	// and remove Game if you dont need it Duh.
 	// Documentation: https://github.com/phineas/lanyard
