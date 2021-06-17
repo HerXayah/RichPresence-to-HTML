@@ -1,13 +1,13 @@
 	// Example ID
 	// var discord_id = "YOUR_ID";
-	// Made by: ♡Lisa~#0004
+	// Credits: Azariel#0004 & Roka#1337
 	// also replace #spotify with Class ID
 	// and remove Game if you dont need it Duh.
 	// Documentation: https://github.com/phineas/lanyard
 
     // For this to Work please join on https://discord.gg/UrXF2cfJ7F
 
-	var discord_id = "ExampleID";
+	var discord_id = "202740603790819328";
 
 	function stats() {
 
@@ -25,7 +25,7 @@
 	        if (data3.length == 0) {
 	            $("#game").html(`<h1 class="nowplay2">Not playing...</h1>`);
 	        } else if (data3.length > 0) {
-	            if (data3[0].type == 4 && data3.length < 2) {
+	            if (data3[0].type == 4 || 2 && data3.length < 1) {
 	                $("#game").html('<h1 class="nowplay2">Not playing...</h1>');
 	            } else {
 	                data2 = data3[0]
