@@ -9,7 +9,6 @@
 
 You need: 
 
-- moment.js
 - The Script itself
 - The Stuff from example/index.html
 
