@@ -12,7 +12,7 @@
 
 		$.getJSON("https://api.lanyard.rest/v1/users/" + discord_id, (data) => {
 			data = data.data;
-			status = data.discord_status;
+			stats = data.discord_status;
 			data2 = data.activities[0]; // defaulting on first activity
 			data3 = data.activities; // having this just to be sure
 			if (data.listening_to_spotify) {
@@ -22,12 +22,12 @@
 			} else {
 				$("#spotify").html("Not playing...")
 			}
-			if (status === "offline" || data2.type == 2 || data3.length == 0 || data2.type == 4) {
+			if (stats === "offline" || data3.length == 0 || data2.type == 4 || data3[0].type === undefined) {
 				if (data3[1] == undefined) {
 					$("#game").html('<h1 class="nowplay2">Not playing...</h1>');
 					return;
 				}
-				data2 = data3[1]
+				data2 = data3[0]
 			}
 			if (data2.type === undefined) {
 				$("#game").html('<h1 class="nowplay2">Not playing...</h1>');
