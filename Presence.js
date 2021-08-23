@@ -29,10 +29,25 @@
 				}
 				data2 = data3[0]
 			}
-			if (data2.type === undefined) {
+			if (data2.type === undefined || data2.type == 2) {
 				$("#game").html('<h1 class="nowplay2">Not playing...</h1>');
 				return;
 			}
+
+			if (data2.state === undefined) {
+
+				$("#game").html(`<h1 class="nowplay2">Playing:</h1><p class="data" Playing at the Moment</h1><b>${data2.name}</b> 
+				<b><i>${data2.details}<z/i>\n </b>`);
+				return;
+			}
+
+			if (data2.details === undefined) {
+
+				$("#game").html(`<h1 class="nowplay2">Playing:</h1><p class="data" Playing at the Moment</h1><b>${data2.name}</b> 
+				<b>\n <i>${data2.state}</i></b>`);
+				return;
+			}
+
 			$("#game").html(`<h1 class="nowplay2">Playing:</h1><p class="data" Playing at the Moment</h1><b>${data2.name}</b> 
 				<b><i>${data2.details}<z/i>\n <i>${data2.state}</i></b>`);
 		})
